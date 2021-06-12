@@ -15,7 +15,7 @@ function App() {
         <NavBar />
       </header>
       <Switch>
-      <Route path="/dhoklawalas"><Home/></Route>
+      <Route path="/"><Home/></Route>
       <Route path="/products"><Products/></Route>
 
       </Switch>
