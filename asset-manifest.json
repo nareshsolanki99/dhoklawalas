@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dhoklawalas/static/css/main.ea23d122.chunk.css",
-    "main.js": "/dhoklawalas/static/js/main.21cbbf8a.chunk.js",
-    "main.js.map": "/dhoklawalas/static/js/main.21cbbf8a.chunk.js.map",
+    "main.js": "/dhoklawalas/static/js/main.f3510af0.chunk.js",
+    "main.js.map": "/dhoklawalas/static/js/main.f3510af0.chunk.js.map",
     "runtime-main.js": "/dhoklawalas/static/js/runtime-main.9c6a7f80.js",
     "runtime-main.js.map": "/dhoklawalas/static/js/runtime-main.9c6a7f80.js.map",
     "static/css/2.61b4cb56.chunk.css": "/dhoklawalas/static/css/2.61b4cb56.chunk.css",
@@ -23,6 +23,6 @@
     "static/css/2.61b4cb56.chunk.css",
     "static/js/2.d1b84c1b.chunk.js",
     "static/css/main.ea23d122.chunk.css",
-    "static/js/main.21cbbf8a.chunk.js"
+    "static/js/main.f3510af0.chunk.js"
   ]
 }
