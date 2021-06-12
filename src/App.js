@@ -16,7 +16,7 @@ function App() {
       </header>
       <Switch>
       <Route path="/dhoklawalas"><Home/></Route>
-      <Route exact path="/products"><Products/></Route>
+      <Route path="/products"><Products/></Route>
 
       </Switch>
     </div>
