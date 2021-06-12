@@ -1,26 +1,28 @@
 import "./styles/main.scss"
 import Home from './pages/Home/Home';
 import Products from "./pages/Product/Products"
-import {HashRouter, Route, Switch} from "react-router-dom"
+import {BrowserRouter, Route, Switch} from "react-router-dom"
 import Header from "./components/Header/Header";
 import NavBar from "./components/Header/NavBar";
 
 
 function App() {
   return (
-    <HashRouter>
+
+    //can use basename="/dhoklawalas" as prop to browser router if we want to route in manner localhost:3000/dhoklwalas/home
+    <BrowserRouter >
     <div className="App">
       <header className="main-header">
         <Header />
         <NavBar />
       </header>
       <Switch>
-      <Route exact path={process.env.PUBLIC_URL?process.env.PUBLIC_URL + '/': '/'}><Home/></Route>
-      <Route  path={process.env.PUBLIC_URL? process.env.PUBLIC_URL+ '/products':'/products'}><Products/></Route>
+      <Route  exact path= '/'><Home/></Route>
+      <Route path='/products'><Products/></Route>
 
       </Switch>
     </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
