@@ -15,8 +15,8 @@ function App() {
         <NavBar />
       </header>
       <Switch>
-      <Route path="/"><Home/></Route>
-      <Route path="/products"><Products/></Route>
+      <Route path={process.env.PUBLIC_URL + '/'}><Home/></Route>
+      <Route path={process.env.PUBLIC_URL + '/products'}><Products/></Route>
 
       </Switch>
     </div>
