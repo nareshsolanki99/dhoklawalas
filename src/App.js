@@ -15,8 +15,8 @@ function App() {
         <NavBar />
       </header>
       <Switch>
-      <Route path={process.env.PUBLIC_URL + '/'}><Home/></Route>
-      <Route path={process.env.PUBLIC_URL + '/products'}><Products/></Route>
+      <Route exact path={process.env.PUBLIC_URL?process.env.PUBLIC_URL + '/': '/'}><Home/></Route>
+      <Route  path={process.env.PUBLIC_URL? process.env.PUBLIC_URL+ '/products':'/products'}><Products/></Route>
 
       </Switch>
     </div>
