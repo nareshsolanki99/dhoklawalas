@@ -1,0 +1,39 @@
+[
+    {"itemid":"1",
+    "name":"Tirangi Sandwich Dhokla",
+    "price":"300",
+    "min-qty":"5",
+    "image":"resource/tirangi-sandwich-dhokla.jpg"  
+    },
+    {"itemid":"2",
+        "name":"Malai Khaman Dhokla",
+        "price":"250",
+        "min-qty":"5",
+        "image":"resource/malai-khaman-dhokla.jpg"  
+    },
+    {"itemid":"3",
+        "name":"Cheese Dhokla",
+        "price":"350",
+        "min-qty":"5",
+        "image":"resource/cheese-dhokla.jpg"  
+    },
+    {"itemid":"4",
+        "name":"Paneer Dhokla",
+        "price":"350",
+        "min-qty":"5",
+        "image":"resource/paneer-dhokla.jpg"  
+    },
+    {"itemid":"5",
+        "name":"Dabeli Dhokla",
+        "price":"350",
+        "min-qty":"5",
+        "image":"resource/dabeli-dhokla.jpg"  
+    },
+    {"itemid":"6",
+        "name":"Lilva Kachori",
+        "price":"250",
+        "min-qty":"5",
+        "image":"resource/lilva-kachori.jpg"  
+    }
+]
+

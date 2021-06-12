@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/dhoklawalas/static/css/main.ea23d122.chunk.css",
+    "main.js": "/dhoklawalas/static/js/main.390730da.chunk.js",
+    "main.js.map": "/dhoklawalas/static/js/main.390730da.chunk.js.map",
+    "runtime-main.js": "/dhoklawalas/static/js/runtime-main.9c6a7f80.js",
+    "runtime-main.js.map": "/dhoklawalas/static/js/runtime-main.9c6a7f80.js.map",
+    "static/css/2.61b4cb56.chunk.css": "/dhoklawalas/static/css/2.61b4cb56.chunk.css",
+    "static/js/2.cdd318e3.chunk.js": "/dhoklawalas/static/js/2.cdd318e3.chunk.js",
+    "static/js/2.cdd318e3.chunk.js.map": "/dhoklawalas/static/js/2.cdd318e3.chunk.js.map",
+    "static/js/3.411aa2d3.chunk.js": "/dhoklawalas/static/js/3.411aa2d3.chunk.js",
+    "static/js/3.411aa2d3.chunk.js.map": "/dhoklawalas/static/js/3.411aa2d3.chunk.js.map",
+    "index.html": "/dhoklawalas/index.html",
+    "static/css/2.61b4cb56.chunk.css.map": "/dhoklawalas/static/css/2.61b4cb56.chunk.css.map",
+    "static/css/main.ea23d122.chunk.css.map": "/dhoklawalas/static/css/main.ea23d122.chunk.css.map",
+    "static/js/2.cdd318e3.chunk.js.LICENSE.txt": "/dhoklawalas/static/js/2.cdd318e3.chunk.js.LICENSE.txt",
+    "static/media/dhokla-home.ef43beda.jpg": "/dhoklawalas/static/media/dhokla-home.ef43beda.jpg",
+    "static/media/patra-home.d284a0c1.jpg": "/dhoklawalas/static/media/patra-home.d284a0c1.jpg",
+    "static/media/vadi-home.bacd798b.jpg": "/dhoklawalas/static/media/vadi-home.bacd798b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c6a7f80.js",
+    "static/css/2.61b4cb56.chunk.css",
+    "static/js/2.cdd318e3.chunk.js",
+    "static/css/main.ea23d122.chunk.css",
+    "static/js/main.390730da.chunk.js"
+  ]
+}
