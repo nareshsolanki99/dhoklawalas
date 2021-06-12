@@ -4,6 +4,7 @@ import Products from "./pages/Product/Products"
 import {BrowserRouter, Route, Switch} from "react-router-dom"
 import Header from "./components/Header/Header";
 import NavBar from "./components/Header/NavBar";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -19,8 +20,8 @@ function App() {
       <Switch>
       <Route  exact path= '/'><Home/></Route>
       <Route path='/products'><Products/></Route>
-
       </Switch>
+      <Footer />
     </div>
     </BrowserRouter>
   );

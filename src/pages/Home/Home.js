@@ -53,11 +53,6 @@ function Home(){
            {topProducts && topProducts.map(product=>{
              return <Card key={product.id} imgSrc={product.image} name={product.name} price={product.price}/>})}
            </div>
-           <div className="features-div"> 
-              <FeatureCard icon="fas fa-truck truck" description="We ensure quick delivery" heading="On-Time Delivery"/>
-              <FeatureCard icon="fas fa-cheese cheese" description="The food is prepared daily as per orders" heading="Fresh Food Always"/>
-              <FeatureCard icon="fas fa-handshake" description="We maintain good relationship with our Customers" heading="Customer Bonding"/>
-           </div>
        </div>
 
     )
