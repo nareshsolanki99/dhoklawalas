@@ -1,0 +1,73 @@
+.header-div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .logo-container{
+        background-image: linear-gradient(to bottom, #6a144a, #ac2b42, #d46221, #d6a600, #a8eb12);
+        background-clip: content-box;
+        -webkit-background-clip: text;
+        font-family: 'Lobster', cursive;
+        color: transparent;
+        margin-left: 80px;
+        text-align: center;
+        h2{
+            font-size: 80px;
+            margin-bottom: 0;
+            line-height: 70px;
+        }
+        h3{
+            font-size: 40px;
+            margin-top: 0;
+            margin-bottom: 8px;
+            line-height: 24px;
+        }
+    }
+    .search-icon{
+        border:1px solid #cab6b6;
+        padding: 5.8px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        margin-left: 100px;
+        align-self: flex-end;
+        margin-bottom: 16px;
+        color: #686867;
+
+    }
+
+    .product-search{
+        height: 30px;
+        width: 40%;
+        border-radius: 4px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        align-self: flex-end;
+        margin-bottom: 16px;
+        border:1px solid #cab6b6;
+    }
+
+    .action-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 16px;
+
+        i{
+            padding: 8px;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            display: inline-block;
+            padding: 8px;
+        }
+        a{
+            text-decoration: none;
+            color: $darkGrey;
+            font-family: $fontStyle1;
+        }
+
+        
+
+    }
+}

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import "./theme";
+
+@import "../App";
+@import "../components/Header/Header";
+@import "../components/Header/NavBar";
+@import "../pages/Home/Home";
+@import "../components/Resuable/MyCarousal";
+@import "../components/Resuable/Card.scss";
+@import "../components/Resuable/FeatureCard";
+@import "../pages/product/Products"
