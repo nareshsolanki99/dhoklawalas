@@ -53,6 +53,7 @@
 
         i{
             padding: 8px;
+            
         }
         ul{
             list-style: none;
@@ -60,14 +61,14 @@
         li{
             display: inline-block;
             padding: 8px;
-        }
-        a{
-            text-decoration: none;
             color: $darkGrey;
             font-family: $fontStyle1;
+            cursor: pointer;
+        }
+        label{
+            font-size: 20px;
+            cursor: pointer;
         }
 
-        
-
-    }
+}
 }

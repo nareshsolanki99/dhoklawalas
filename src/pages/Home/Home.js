@@ -4,7 +4,6 @@ import image1 from "./images/dhokla-home.jpg"
 import image2 from "./images/patra-home.jpg"
 import image3 from "./images/vadi-home.jpg"
 import Card from "../../components/Resuable/Card"
-import FeatureCard from "../../components/Resuable/FeatureCard";
 import "../../styles/main.scss"
 
 

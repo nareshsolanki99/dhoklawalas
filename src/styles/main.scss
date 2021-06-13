@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 @import "./theme";
 
 @import "../App";
@@ -12,4 +15,7 @@
 @import "../components/Resuable/Card.scss";
 @import "../components/Resuable/FeatureCard";
 @import "../pages/product/Products";
-@import "../components/Footer/Footer"
+@import "../components/Footer/Footer";
+@import "../components/Modal/Modal";
+@import "../components/Forms/LoginForm";
+@import "../components/Forms/Register";
