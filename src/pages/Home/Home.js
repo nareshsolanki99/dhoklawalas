@@ -38,9 +38,10 @@ function Home(){
         .then(res => res.json())
         .then(setTopProducts);
 
+
       },[])
       
-      console.log(topProducts);
+      //console.log(topProducts);
 
     return(
       <div className="home-div">
@@ -50,7 +51,7 @@ function Home(){
        <h4 className="top-product-heading"><span>----------------</span>  Top Selling Products  <span>----------------</span></h4>
        <div className="top-product-div">
            {topProducts && topProducts.map(product=>{
-             return <Card key={product.id} imgSrc={product.image} name={product.name} price={product.price}/>})}
+             return <Card key={product.itemid} id={product.itemid} imgSrc={product.image} name={product.name} price={product.price}/>})}
            </div>
        </div>
 

@@ -56,15 +56,76 @@
             margin-left: 16px;
         }
 
+        .invalid-input{
+            border: 3px solid #d41a1a;
+            background-color: #f89c9c;
+        }
+
         input{
             padding: 8px;
-            margin: 4px 0px;
+            margin: 6px 0px;
             border-radius: 8px;
             border: none;
             width: 250px;
             margin-bottom: 16px;
             margin-right: 16px;
+            font-family: $official;
+            font-size: 14px;
+            font-weight: 600;
+            outline: none;
         }
+       
+        span{
+            display: inline-block;
+            position: absolute;
+        }
+        .name-span{
+            top:29.5%;
+            left:20%;
+            z-index: -1;
+            
+        }
+        .outlet-span{
+            top: 29.5%;
+            right: 20%;
+            z-index: -1;
+        }
+        .mobile-span{
+            top:42%;
+            left:20%;
+            z-index: -1;
+
+        }
+        .email-span{
+            top:42%;
+            right: 20%;
+            z-index: -1;
+
+        }
+        .username-span{
+            top:55%;
+            right: 40%;
+            z-index: -1;
+
+        }
+        .password-span{
+            top:68%;
+            left:5%;
+            z-index: -1;
+
+        }
+        .repassword-span{
+            top:68%;
+            right: 20%;
+            z-index: -1;
+
+        }
+
+        .invalid{
+                z-index: 1;
+        }
+
+
         button {
             display: block;
             width: 50%;

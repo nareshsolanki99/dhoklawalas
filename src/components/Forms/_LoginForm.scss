@@ -61,7 +61,13 @@
             border: none;
             width: 250px;
             margin-bottom: 16px;
+            font-family: $official;
+            font-size: 14px;
+            font-weight: 600;
             
+        }
+        .empty{
+            border:1px solid red;
         }
 
         button {

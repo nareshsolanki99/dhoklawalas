@@ -1,18 +1,39 @@
-import React from "react"
+import React, { useContext, useState } from "react"
 import "../../styles/main.scss"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button} from "reactstrap"
+import CartContext from "../../context/CartContext";
 
 function Card(props){
 
-    console.log(props.imgSrc);
+    const cartContext = useContext(CartContext);
+
+    const [qty,setQty] = useState(1);
+    const addToCart = () =>{
+
+        const item = {
+            id:props.id,
+            name:props.name,
+            price:props.price,
+            qty:Number(qty)
+        }
+
+        console.log(`item is ${item.id}`)
+        setQty(1);
+        cartContext.addItem(item);
+    }
+
+    const qtyInputHandler = (e) =>{
+        setQty(e.target.value);
+    }
+
     return(
         <div className="product-div">
             <div className="image-div">
             <img id="img-container" src={props.imgSrc} alt={props.name}/></div>
             <div className="name-container"><h4 className="product">{props.name}</h4></div>
             <h3>Price:{props.price}</h3>
-            <div className="actions"><input className="qty-input" type="number" min="1" max="20" defaultValue="1"/><Button>Add To Cart</Button></div>
+            <div className="actions"><input className="qty-input" value={qty} type="number" min="1" max="20" defaultValue="1" onChange={qtyInputHandler}/><Button onClick={addToCart}>Add To Cart</Button></div>
         </div>
     )
 

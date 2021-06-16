@@ -14,7 +14,7 @@ function Products(){
     return(
         <div className="prod">
                 {productDetails && productDetails.map(product=>{
-             return <Card key={product.id} imgSrc={product.image} name={product.name} price={product.price}/>})}
+             return <Card key={product.id} id={product.itemid} imgSrc={product.image} name={product.name} price={product.price}/>})}
         </div>
     )
 }
