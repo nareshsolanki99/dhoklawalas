@@ -23,7 +23,7 @@ const Header = (props) =>{
           <h2>PP</h2>
           <h3> Dhoklawala's</h3>
         </div>
-        <i className="fas fa-search search-icon"></i>
+        <div className="search-div"><i className="fas fa-search search-icon"></i>
         <input
           type="text"
           className="product-search"
@@ -31,7 +31,7 @@ const Header = (props) =>{
           placeholder=" Search for products here..."
           onFocus={()=> history.push('/products')}
           onChange={updateProductList}
-        />
+        /></div>
         <div className="action-container">
           <ul>
             {!outlet && <li onClick={() => context.setRegisterButtonClicked(true)}>
@@ -42,11 +42,13 @@ const Header = (props) =>{
             </li>}
             </ul>
             {outlet && <h5>{`Welcome ${outlet.slice(0,30)}`}</h5>}
-          <div>{outlet && <label><i className="fas fa-user account"></i>My Account</label>}
+          <div>{outlet && <><label><i className="fas fa-user account"></i>My Account</label>
+          <label><i class="fas fa-sign-out-alt logout"></i>Logout</label></>}
+          </div>
           <label onClick={() => context.setCartButtonClicked(true)}>
             <i className="fas fa-shopping-cart cart-icon"></i>Cart(
             <span>{items.length}</span>)
-          </label></div>
+          </label>
         </div>
       </div>
     );

@@ -30,8 +30,8 @@ const Cart = (props) => {
         <span>{item.name}</span>
         <span>
           Qty: {item.qty}{" "}
-          <button onClick={removeItemFromCart.bind(null, item.id)}>-</button>{" "}
-          <button onClick={addItemToCart.bind(null, item)}>+</button>
+          <button onClick={addItemToCart.bind(null, item)}>+</button>{" "}
+          <button onClick={removeItemFromCart.bind(null, item.id)} >-</button>
         </span>
         <span>Price: Rs.{item.price}/-Kg</span>
         <span>Total: Rs.{item.qty * item.price}</span>
@@ -61,7 +61,7 @@ const Cart = (props) => {
           <button onClick={() => context.setCartButtonClicked(false)}>
             Close
           </button>
-         {items.length>0 && <button> Place Order</button>}
+         {items.length>0 && <button> Order</button>}
           <span>Total Amount: Rs.{totalAmount}</span>
         </div>
       </div>

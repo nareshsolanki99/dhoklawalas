@@ -31,7 +31,7 @@ const RegisterForm = (props) => {
 
   const checkEmailExists =async (e) =>{
     if(emailRegex.test(e.target.value)){
-      const response = await fetch("http://localhost:3100/api/register/checkEmailExists",{
+      const response = await fetch(process.env.REACT_APP_BACKEND_URL+"/register/checkEmailExists",{
         headers:{"Content-type": "application/json"},
         method: "POST",
         body: JSON.stringify({email:e.target.value})
@@ -89,7 +89,7 @@ const RegisterForm = (props) => {
     }
     if(namefieldValid && outletfieldValid && emailfieldValid && mobilefieldValid && passwordfieldValid && repasswordfieldValid){
         const user = {name,outlet,email,mobile,password}
-        const response = await fetch("http://localhost:3100/api/register",{
+        const response = await fetch(process.env.REACT_APP_BACKEND_URL+"/register",{
             method:"post",
             headers:{"Content-type":"application/json"},
             body: JSON.stringify(user)

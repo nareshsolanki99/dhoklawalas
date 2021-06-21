@@ -10,6 +10,11 @@
     animation: login-animation 200ms ease-in;
     position: relative;
 
+    @media (max-width:500px){
+        width:90%;    
+        height:700px;
+    }
+
     .x-box{
         position: absolute;
         top: -16px;
@@ -21,6 +26,10 @@
         font-weight: 100;
         font-size: 32px;
         cursor: pointer;
+        @media (max-width:500px){
+            right:-10px;    
+        }
+
     }
 
     .heading-div{
@@ -32,12 +41,20 @@
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         
+        @media (max-width:500px){
+            height:100px;    
+        }
+        
 
         h3{
             transform: translateY(20px);
             font-family: $official;
             font-weight: 900;
             height: 32px;
+
+            @media (max-width:500px){
+                height:50px;    
+            }
         }
 
         
@@ -49,11 +66,20 @@
         font-family: $fontStyle2;
         color: red;
         margin-left: 16px;
+        @media (max-width:500px){
+            margin-left:4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+        }
 
         label{
             font-size: 24px;
             margin-right: 4px;
             margin-left: 16px;
+            @media (max-width:500px){
+                margin:2px;    
+            }
         }
 
         .invalid-input{
@@ -73,6 +99,9 @@
             font-size: 14px;
             font-weight: 600;
             outline: none;
+            @media (max-width:500px){
+                margin-right: 16px;    
+            }
         }
        
         span{
@@ -83,12 +112,21 @@
             top:31.2%;
             left:20%;
             z-index: -1;
+            @media (max-width:500px){
+                top:25%;
+                left:30%;    
+            }
             
         }
         .outlet-span{
             top: 31.3%;
             right: 20%;
             z-index: -1;
+
+            @media (max-width:500px){
+                top:35.5%;
+                left:32%;    
+            }
         }
         .mobile-span{
             top:45.5%;
@@ -100,6 +138,10 @@
             top:45.5%;
             right: 20%;
             z-index: -1;
+            @media (max-width:500px){
+                top:56%;
+                left:30%;    
+            }
 
         }
         .password-span{
@@ -107,11 +149,22 @@
             left:5%;
             z-index: -1;
 
+            @media (max-width:500px){
+                top:68%;
+                left:10%;
+                line-height:10px;    
+            }
+
         }
         .repassword-span{
             top:60.2%;
             right: 20%;
             z-index: -1;
+            @media (max-width:500px){
+                top:77%;
+                left:35%;    
+            }
+            
 
         }
 

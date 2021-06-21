@@ -45,7 +45,7 @@ function Home(){
     return(
       <div className="home-div">
        <MyCarousal items={items} />
-       <h4 className="top-product-heading"><span>----------------</span>  Top Selling Products  <span>----------------</span></h4>
+       <h4 className="top-product-heading"><span>--------------</span>  Top Selling Products  <span>--------------</span></h4>
        <div className="top-product-div">
            {topProducts && topProducts.map(product=>{
              return <Card key={product.itemid} id={product.itemid} imgSrc={product.image} name={product.name} price={product.price}/>})}
