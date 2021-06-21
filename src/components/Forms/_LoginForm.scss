@@ -64,8 +64,14 @@
             font-family: $official;
             font-size: 14px;
             font-weight: 600;
-            
+            outline: none;
         }
+
+        .invalid-input{
+            border: 3px solid #d41a1a;
+            background-color: #f89c9c;
+        }
+
         .empty{
             border:1px solid red;
         }
@@ -88,6 +94,10 @@
             }
 
            
+        }
+        span{
+            margin-left: 30%;
+            cursor: pointer;
         }
         
     }

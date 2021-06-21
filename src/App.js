@@ -11,6 +11,8 @@ import ButtonContext from "./context/ButtonContext";
 import RegisterForm from "./components/Forms/Register";
 import Cart from "./components/Cart/Cart";
 import CartContextProvider from "./context/CartContextProvider";
+import UserContextProvider from "./context/UserContextProvider"
+import ProductContextProvider from "./context/ProductContextProvider"
 
 
 function App() {
@@ -18,12 +20,16 @@ function App() {
   const [loginButtonClicked,setLoginButtonClicked] = useState(false);
   const [registerButtonClicked,setRegisterButtonClicked] = useState(false);
   const [cartButtonClicked,setCartButtonClicked] = useState(false);
+
+
   return (
 
     //can use basename="/dhoklawalas" as prop to browser router if we want to route in manner localhost:3000/dhoklwalas/home
     <BrowserRouter >
     <ButtonContext.Provider value={{setLoginButtonClicked,setRegisterButtonClicked,setCartButtonClicked}}>
-    <CartContextProvider>
+    <CartContextProvider >
+    <UserContextProvider >
+    <ProductContextProvider>
     <div className="App">
       <header className="main-header">
         {cartButtonClicked && <Cart />}
@@ -32,12 +38,15 @@ function App() {
         <Header />
         <NavBar />
       </header>
+      <div className="space-occupier"></div>
       <Switch>
       <Route exact path= '/'><Home/></Route>
       <Route path='/products'><Products/></Route>
       </Switch>
       <Footer />
     </div>
+    </ProductContextProvider>
+    </UserContextProvider>
     </CartContextProvider>
     </ButtonContext.Provider>
     </BrowserRouter>

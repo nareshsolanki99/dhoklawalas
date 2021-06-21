@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useContext } from "react"
 import MyCarousal from "../../components/Resuable/MyCarousal";
 import image1 from "./images/dhokla-home.jpg"
 import image2 from "./images/patra-home.jpg"
@@ -38,15 +38,12 @@ function Home(){
         .then(res => res.json())
         .then(setTopProducts);
 
-
       },[])
       
       //console.log(topProducts);
 
     return(
       <div className="home-div">
-       {/* <div className="carousal-div"><ImageCarousal items={items} /></div> */}
-       
        <MyCarousal items={items} />
        <h4 className="top-product-heading"><span>----------------</span>  Top Selling Products  <span>----------------</span></h4>
        <div className="top-product-div">

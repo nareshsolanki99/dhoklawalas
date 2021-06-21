@@ -23,7 +23,7 @@ const MyCarousal = (props)=>{
 
         return <div className="carousal-container">
                 {props.items.map((item,index) =>{
-                    return <a href=""><div className={"slides"} key={index}>
+                    return <a href="/products" key={item.altText}><div className={"slides"} key={index}>
                         {slideIndex === index && <img key={index} src={item.src} alt={item.altText}/>}
                     </div></a>
                 })}

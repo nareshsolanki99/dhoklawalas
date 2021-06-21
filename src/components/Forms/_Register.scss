@@ -45,7 +45,7 @@
     }
 
     .form-div{
-        margin-top: 20px;
+        margin-top: 30px;
         font-family: $fontStyle2;
         color: red;
         margin-left: 16px;
@@ -67,7 +67,7 @@
             border-radius: 8px;
             border: none;
             width: 250px;
-            margin-bottom: 16px;
+            margin-bottom: 24px;
             margin-right: 16px;
             font-family: $official;
             font-size: 14px;
@@ -80,42 +80,36 @@
             position: absolute;
         }
         .name-span{
-            top:29.5%;
+            top:31.2%;
             left:20%;
             z-index: -1;
             
         }
         .outlet-span{
-            top: 29.5%;
+            top: 31.3%;
             right: 20%;
             z-index: -1;
         }
         .mobile-span{
-            top:42%;
-            left:20%;
+            top:45.5%;
+            left:18%;
             z-index: -1;
 
         }
         .email-span{
-            top:42%;
+            top:45.5%;
             right: 20%;
             z-index: -1;
 
         }
-        .username-span{
-            top:55%;
-            right: 40%;
-            z-index: -1;
-
-        }
         .password-span{
-            top:68%;
+            top:60.2%;
             left:5%;
             z-index: -1;
 
         }
         .repassword-span{
-            top:68%;
+            top:60.2%;
             right: 20%;
             z-index: -1;
 
@@ -165,7 +159,7 @@
         input:nth-of-type(1){
             width: 230px;
         }
-        input:nth-of-type(1){
+        input:nth-of-type(2){
             width: 240px;
         }
     }

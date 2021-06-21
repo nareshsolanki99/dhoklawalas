@@ -1,20 +1,23 @@
-import React, { useEffect, useState } from "react"
+import React, { useContext,useEffect } from "react"
 import Card from "../../components/Resuable/Card";
-import "../../styles/main.scss"
+import "../../styles/main.scss";
+import ProductContext from "../../context/product-context";
 
 function Products(){
-    const [productDetails,setProductDetails] = useState();
+    const productCtx = useContext(ProductContext);
 
     useEffect(()=>{
-        fetch("./productDetails.json")
-        .then(res => res.json())
-        .then(setProductDetails);
+
+        return ()=>{
+            productCtx.clearSearch();
+        }
+
     },[])
 
     return(
         <div className="prod">
-                {productDetails && productDetails.map(product=>{
-             return <Card key={product.id} id={product.itemid} imgSrc={product.image} name={product.name} price={product.price}/>})}
+                {productCtx.newList && productCtx.newList.map(product=>{
+             return <Card key={product.id} id={product.itemid} imgSrc={product.image} className="product-card" name={product.name} price={product.price}/>})}
         </div>
     )
 }

@@ -17,8 +17,7 @@ function Card(props){
             price:props.price,
             qty:Number(qty)
         }
-
-        console.log(`item is ${item.id}`)
+        
         setQty(1);
         cartContext.addItem(item);
     }
@@ -28,12 +27,12 @@ function Card(props){
     }
 
     return(
-        <div className="product-div">
+        <div className = {props.className?props.className:"product-div"}>
             <div className="image-div">
             <img id="img-container" src={props.imgSrc} alt={props.name}/></div>
             <div className="name-container"><h4 className="product">{props.name}</h4></div>
             <h3>Price:{props.price}</h3>
-            <div className="actions"><input className="qty-input" value={qty} type="number" min="1" max="20" defaultValue="1" onChange={qtyInputHandler}/><Button onClick={addToCart}>Add To Cart</Button></div>
+            <div className="actions"><input className="qty-input" value={qty} type="number" min="1" max="20" onChange={qtyInputHandler}/><Button onClick={addToCart}>Add To Cart</Button></div>
         </div>
     )
 
