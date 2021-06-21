@@ -14,6 +14,13 @@ const UserContextProvider = props =>{
         setToken(token);     
     }
     },[])
+
+    const logoutHandler=()=>{
+        setOutlet("");
+        setId("");
+        setToken("");
+        localStorage.removeItem('user');
+    }
     
     const user = {
         outlet:outlet,
@@ -21,7 +28,8 @@ const UserContextProvider = props =>{
         token:token,
         setOutlet:setOutlet,
         setId:setId,
-        setToken:setToken
+        setToken:setToken,
+        logout:logoutHandler
     }
 
 

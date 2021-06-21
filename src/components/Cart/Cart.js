@@ -10,9 +10,6 @@ const Cart = (props) => {
     useContext(CartContext);
 
   const addItemToCart = (item) => {
-    console.log(
-      `Item qty is ${item.qty} ${item.name} ${item.price} ${item.id}`
-    );
     addItem({ ...item, qty: 1 });
   };
 

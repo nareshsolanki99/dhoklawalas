@@ -94,7 +94,6 @@ const RegisterForm = (props) => {
             headers:{"Content-type":"application/json"},
             body: JSON.stringify(user)
         })
-        console.log(`Response is ${response} and type is ${typeof response}`);
         if(response.status === 200){
             alert("Registration successful.")
             context.setRegisterButtonClicked(false);

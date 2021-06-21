@@ -26,15 +26,30 @@ function Card(props){
         setQty(e.target.value);
     }
 
-    return(
-        <div className = {props.className?props.className:"product-div"}>
-            <div className="image-div">
-            <img id="img-container" src={props.imgSrc} alt={props.name}/></div>
-            <div className="name-container"><h4 className="product">{props.name}</h4></div>
-            <h3>Price:{props.price}</h3>
-            <div className="actions"><input className="qty-input" value={qty} type="number" min="1" max="20" onChange={qtyInputHandler}/><Button className="button" onClick={addToCart}>Add To Cart</Button></div>
+    return (
+      <div className={props.className ? props.className : "product-div"}>
+        <div className="image-div">
+          <img id="img-container" src={props.imgSrc} alt={props.name} />
         </div>
-    )
+        <div className="name-container">
+          <h4 className="product">{props.name}</h4>
+        </div>
+        <h3>Price:{props.price}</h3>
+        <div className="actions">
+          <input
+            className="qty-input"
+            value={qty}
+            type="number"
+            min="1"
+            max="20"
+            onChange={qtyInputHandler}
+          />
+          <Button className="button" onClick={addToCart}>
+            Add To Cart
+          </Button>
+        </div>
+      </div>
+    );
 
 }
 

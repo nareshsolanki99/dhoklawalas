@@ -1,5 +1,5 @@
 import "./styles/main.scss"
-import React,{useState} from "react"
+import React,{useState,useEffect} from "react"
 import Home from './pages/Home/Home';
 import Products from "./pages/Product/Products"
 import {BrowserRouter, Route, Switch} from "react-router-dom"
@@ -20,6 +20,12 @@ function App() {
   const [loginButtonClicked,setLoginButtonClicked] = useState(false);
   const [registerButtonClicked,setRegisterButtonClicked] = useState(false);
   const [cartButtonClicked,setCartButtonClicked] = useState(false);
+
+  //To make server start // to wake up
+  useEffect(()=>{
+      fetch(process.env.REACT_APP_ASSET_URL)
+
+  },[])
 
 
   return (

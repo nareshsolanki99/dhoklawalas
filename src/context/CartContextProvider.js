@@ -68,7 +68,6 @@ const CartContextProvider = props =>{
     
 
     const addItemToCart = item =>{
-        console.log(`Inside addItem  ${item.name} ${item.id} ${item.qty} `)
         dispatchAction({
             type:"ADD",
             item

@@ -8,7 +8,7 @@ import ProductContext from "../../context/product-context"
 const Header = (props) =>{
     const context = useContext(ButtonContext);
     const {items} = useContext(CartContext);
-    const {outlet} = useContext(UserContext);
+    const {outlet,logout} = useContext(UserContext);
     const history = useHistory();
     const productctx = useContext(ProductContext);
 
@@ -43,7 +43,7 @@ const Header = (props) =>{
             </ul>
             {outlet && <h5>{`Welcome ${outlet.slice(0,30)}`}</h5>}
           <div>{outlet && <><label><i className="fas fa-user account"></i>My Account</label>
-          <label><i class="fas fa-sign-out-alt logout"></i>Logout</label></>}
+          <label onClick={()=>logout()}><i class="fas fa-sign-out-alt logout"></i>Logout</label></>}
           </div>
           <label onClick={() => context.setCartButtonClicked(true)}>
             <i className="fas fa-shopping-cart cart-icon"></i>Cart(
